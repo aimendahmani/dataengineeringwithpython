@@ -1,0 +1,11 @@
+# to change kibana_system password
+docker exec -it <elastic container id> bash
+
+./bin/elasticsearch-reset-password --username kibana_system -i 
+
+<enter the kibana_system Password>
+#
+
+# create python virtual env
+python -m venv virenv
+#
